@@ -1,0 +1,52 @@
+.playButton {
+    background-color: #ffa14e; /* Arka plan rengi */
+    color: #ffffff;
+    padding: 14px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 'PixelFont';
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.playButton:hover {
+    background-color: #ffb06b; /* Hover rengi */
+}
+
+.notification {
+    position: fixed; /* veya absolute, kutunun pozisyonunu sayfa üzerinde sabitlemek için */
+    bottom: 20px;
+    left: 2.5%;
+    background-color: #4caf50; /* Başarılı mesaj için yeşil arka plan */
+    color: white; /* Metin rengi beyaz */
+    padding: 10px;
+    border: 5px solid #248427;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Kutuya gölge ekleyin */
+    z-index: 1000; /* Diğer elementlerin üzerinde görünsün */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px; /* Kutunun minimum genişliği */
+}
+
+.notification p {
+    margin: 0;
+}
+
+.notification button {
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    background: none;
+}
+
+.notification a:hover {
+    color: white;
+}

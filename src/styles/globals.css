@@ -1,0 +1,37 @@
+@font-face {
+    /* My Font */
+    font-family: 'PixelFont';
+    src: url('/pixelfont.ttf') format('truetype');
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'PixelFont';
+    background-color: #FCF4E9;
+    height: 100vh;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#game {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+
+  .hidden {
+    display: none;
+}
