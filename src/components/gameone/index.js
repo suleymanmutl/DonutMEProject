@@ -203,13 +203,6 @@ const Game = () => {
                     }
                 }
 
-                // function makeDown() {
-                //     if (donut.isCurrentlyJumping) {
-                //         donut.jump(-600);
-                //
-                //     }
-                // }
-
                 function resetAfterJump(donut) {
                     if (donut.isGrounded() && donut.isCurrentlyJumping) {
                         donut.isCurrentlyJumping = false; // Karakterin artık zıplamadığını belirtin.

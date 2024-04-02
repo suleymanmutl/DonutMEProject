@@ -53,7 +53,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
   );
 
   return (
-    <ConnectionProvider endpoint="https://mainnet.helius-rpc.com/?api-key=7e9ca5e6-adbb-4748-80a3-6dd6ca8e4636">
+    <ConnectionProvider endpoint="my-rpc">
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
           <Component {...pageProps} />

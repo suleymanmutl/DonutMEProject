@@ -26,7 +26,6 @@ const Home: NextPage = () => {
         // İlk yükleme için pencere boyutunu kontrol et
         checkWindowSize();
 
-        // Component unmount edildiğinde event listener'ı temizle
         return () => {
             window.removeEventListener('resize', checkWindowSize);
         };
